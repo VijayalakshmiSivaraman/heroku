@@ -1,0 +1,30 @@
+<html>
+    <title>
+        Big Mart Sales Prediction APP
+    </title>
+    <body>
+        <form action = "{{url_for('predict')}}" method='post'>
+            <label>Experience: </label>
+
+
+            <label>Item_MRP: </label><input type = "text" name = "Item_MRP"/><br>       
+            <div><br></div>
+            <label>Outlet_Size: </label><input type = "text" name = "Outlet_Size" /><br>
+            <div><br></div>
+            <label>Outlet_Establishment_Year: </label><input type = "text" name = "Outlet_Establishment_Year" /><br>
+            <div><br></div>
+            <label>Item_Visibility: </label><input type = "text" name = "Item_Visibility" /><br>
+            <div><br></div>
+            <label>Item_Weight: </label><input type = "text" name = "Item_Weight" /><br>
+            <div><br></div>
+            <button type = "submit">Predict</button>
+
+        </form>
+
+        {{ prediction }}
+
+
+    </body>
+
+
+</html>
